@@ -1,4 +1,4 @@
-test:
+gradle testtest:
 	gradle test
 
 example:

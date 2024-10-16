@@ -1,7 +1,7 @@
 package exercise;
 
 // BEGIN
-public class Segment {
+public class Segment extends Point {
     Point beginPoint;
     Point endPoint;
 
@@ -18,12 +18,10 @@ public class Segment {
         return endPoint;
     }
 
-    public Point getEndPoint() {
-        return endPoint;
-    }
-
     public Point getMidPoint() {
-        return endPoint - (endPoint - beginPoint) / 2 ;
+        var midX = (beginPoint.getX() + endPoint.getX()) /2;
+        var midY = (beginPoint.getY() + endPoint.getY()) /2;
+        return new Point(midX, midY);
     }
 }
 // END
