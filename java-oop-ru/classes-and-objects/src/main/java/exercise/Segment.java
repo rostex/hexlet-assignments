@@ -19,8 +19,8 @@ public class Segment extends Point {
     }
 
     public Point getMidPoint() {
-        var midX = (beginPoint.getX() + endPoint.getX()) /2;
-        var midY = (beginPoint.getY() + endPoint.getY()) /2;
+        var midX = (beginPoint.getX() + endPoint.getX()) / 2;
+        var midY = (beginPoint.getY() + endPoint.getY()) / 2;
         return new Point(midX, midY);
     }
 }
