@@ -1,7 +1,7 @@
 package exercise;
 
 // BEGIN
-public class Segment extends Point {
+public class Segment {
     Point beginPoint;
     Point endPoint;
 
