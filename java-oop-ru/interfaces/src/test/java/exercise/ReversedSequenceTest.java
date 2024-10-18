@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class ReversedSequenceTest {
     @Test
-    void testReversedSequence(){
+    void testReversedSequence() {
         CharSequence text = new ReversedSequence("abcdef");
 
         var toStringExpected = "fedcba";
