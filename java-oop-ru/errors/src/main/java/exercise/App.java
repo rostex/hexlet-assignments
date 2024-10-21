@@ -6,7 +6,7 @@ public class App {
         try {
             System.out.println(Math.round(circle.getSquare()));
         } catch (NegativeRadiusException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         } finally {
             System.out.println("Вычисление окончено");
         }
