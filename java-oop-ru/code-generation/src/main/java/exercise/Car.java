@@ -1,17 +1,12 @@
 package exercise;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.Value;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
 
 // BEGIN
-@AllArgsConstructor
-@Getter
+@Value
 // END
 class Car {
     int id;
@@ -24,7 +19,7 @@ class Car {
     public static String serialize(Car car) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            return mapper.writeValueAsString(Car.class);
+            return mapper.writeValueAsString(car);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

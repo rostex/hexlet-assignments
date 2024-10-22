@@ -10,7 +10,7 @@ public class App {
     public static void save(Path filePath, Car car) {
         String serializeCar = Car.serialize(car);
         try {
-            Files.writeString(filePath, serializeCar);
+            Files.writeString(filePath, serializeCar, StandardOpenOption.CREATE);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
